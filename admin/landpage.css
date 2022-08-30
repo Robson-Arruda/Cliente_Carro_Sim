@@ -1,0 +1,39 @@
+ul{
+    
+    background: rgb(238, 238, 238);
+    width: 80%;
+    border-width: 0.02em;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul li{
+    
+    list-style: none;
+    width: 80%;
+    margin: 2%;
+    padding: 1%;
+    background: linear-gradient(to top, rgb(172, 12, 12),rgb(247, 59, 59));
+    border-style: solid;
+    border-width: 0.02em;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+li a{
+    text-decoration: none;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 1%;
+    display: block;
+}
+
+body{
+    font-family: sans-serif;
+    text-align: center;
+    font-size:larger;
+}

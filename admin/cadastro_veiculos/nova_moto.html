@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="pt-BR">
+        <title>Nova Moto</title>
+        <link rel="stylesheet" href="../cadastro_veiculos/cadastro_veiculos.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="../landpage.html"><img src="../../imagens/logo carro sim.PNG" alt=""></a>
+
+            </header>
+        <nav> 
+            <ul>
+                <li><a href="../landpage.html">Início</a></li>
+             </ul>
+        </nav>
+        <h2>Cadastro de Nova Moto </h2>
+        <div class="container">
+            <form action="destino.html" method="post" class="formulario">
+                <input type="text" name="marca" id="marca" placeholder="MARCA API FIPE" required><br>
+                <input type="text" name="modelo" id="modelo" placeholder="MODELO API FIPE" required><br>
+                <input type="text" name="cilindrada" id="cilindrada" placeholder="Cilindrada" required><br>
+                <input type="text" name="ano" id="ano" placeholder="ANO API FIPE" required><br>
+                <input type="text" name="km" id="km" placeholder="KM Atual" required><br>
+                <textarea rows="10" cols="40" maxlength="3000" id="descricao" placeholder="Descrição"></textarea><br>
+                <input type="text" name="valor_entrada" id="valor_entrada" placeholder="Valor de Compra"><br>
+                <input type="text" name="valor_venda" id="valor_venda" placeholder="Valor de Venda" required>
+
+                <div class="selecoes">
+                     <h4>Combustivel</h4>
+                    <label for="combustivel">Selecione o Combustível</label><br>
+                    <select name="combustivel" id="combustivel" required>
+                        <option value="" selected>---Escolha---</option>
+                        <option value="Flex">Flex</option>
+                        <option value="gasolina">Gasolina</option>
+                        <option value="Etanol">Etanol</option>
+                                                    
+                    </select>
+
+                    <h4>Tipo de Partida</h4>
+                    <label for="partida">Selecione o Tipo de Partida</label><br>
+                    <select name="partida" id="partida" required>
+                        <option value="" selected>---Escolha---</option>
+                        <option value="eletrica">Elétrica</option>
+                        <option value="pedal">Pedal</option>
+                        <option value="eletrica_pedal">Elétrica e Pedal</option>
+                                                    
+                    </select>
+
+                    <h4>Tipo de Motor</h4>
+                    <label for="partida">Selecione o Tipo de Motor</label><br>
+                    <select name="motor" id="motor" required>
+                        <option value="" selected>---Escolha---</option>
+                        <option value="dois_tempos">2 Tempos</option>
+                        <option value="quatro_tempos">4 Tempos</option>
+                        <option value="eletrico">Elétrico</option>
+                                                    
+                    </select>
+                
+                
+
+                                     
+            
+                <h3>Selecione os Acessórios</h3>
+                <div class="checkbox">    
+                    <h4>Conforto e Conveniência</h4>
+
+                    <input type="checkbox" name="bau" id="bau">
+                    <label for="bau">Bolsa/Baú</label>
+
+                    <input type="checkbox" name="computador" id="computador">
+                    <label for="computador">Computador de Bordo</label>
+
+                    <input type="checkbox" name="escape" id="escape">
+                    <label for="escape">escapamento Esportivo</label>
+
+                    <input type="checkbox" name="farol" id="farol">
+                    <label for="farol">Faróis de Neblina</label>
+
+                    <input type="checkbox" name="alarme" id="alarme">
+                    <label for="alarme">Alarme</label>
+
+                </div>
+            <div class="checkbox">
+                <h4>Segurança</h4>
+
+
+                <input type="checkbox" name="abs" id="abs">
+                <label for="abs">ABS</label>
+
+                <input type="checkbox" name="controle_tracao" id="controle_tracao">
+                <label for="controle_tracao">Controle de Tração</label>
+
+
+                <input type="checkbox" name="direcao" id="direcao">
+                <label for="direcao">Amortecedor de direção</label>
+
+                
+            </div>
+
+            <div class="estoque">
+                <h4>Estoque</h4>
+                
+                <label for="tipo_entrada">Estoque Loja ou Consiguinado</label><br>
+                <select name="tipo_entrada" id="tipo_entrada" required>
+                    <option value="" selected>---Escolha---</option>
+                    <option value="estoque_loja">Estoque Loja</option>
+                    <option value="consiguinado">Consiguinado</option>
+                </select>
+                        
+            </div>
+            <div class="captacao">
+                <h4>Captação</h4>
+                
+                <label for="captacao">Quem Captou o Veículo?</label><br>
+                <select name="tipo_entrada" id="tipo_entrada" required>
+                    <option value="" selected>---Escolha---</option>
+                </select>
+                                     
+            </div>
+
+            <div class="adicionais">
+                <h4>Adiconais</h4>
+                
+                <label for="troca">Aceita Troca?</label><br>
+                <select name="troca" id="troca" required>
+                    <option value="" selected>---Escolha---</option>
+                    <option value="sim" >Sim</option>
+                    <option value="nao" >Não</option>
+                </select>
+
+                <br>
+
+                <label for="ipva">IPVA Pago?</label><br>
+                <select name="ipva" id="ipva" required>
+                    <option value="" selected>---Escolha---</option>
+                    <option value="sim" >Sim</option>
+                    <option value="nao" >Não</option>
+                </select>
+
+                <br>
+
+                <label for="dono">Único Dono?</label><br>
+                <select name="dono" id="dono" required>
+                    <option value="" selected >---Escolha---</option>
+                    <option value="sim" >Sim</option>
+                    <option value="nao" >Não</option>
+                </select>
+
+                <br>
+
+                <label for="leilao" class="leilao">Passagem por Leilão?</label><br>
+                <select name="leilao" id="leilao" required>
+                    <option value="" selected >---Escolha---</option>
+                    <option value="sim" >Sim</option>
+                    <option value="nao" >Não</option>
+                </select>
+                <br>
+                <input type="text" name="foto" id="foto_moto" placeholder="Foto Moto" required><br>
+                <input type="text" name="video" id="video_moto" placeholder="Video Moto" required><br>
+                                     
+            </div>
+            <input type="submit" value="Enviar" name="enviar" id="enviar">
+
+        </form>
+        
+        </div>
+   
+        </main>
+    </body>
+</html>

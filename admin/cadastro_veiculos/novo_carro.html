@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="pt-BR">
+        <title>Novo Veiculo</title>
+        <link rel="stylesheet" href="../cadastro_veiculos/cadastro_veiculos.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="../landpage.html"><img src="../../imagens/logo carro sim.PNG" alt=""></a>
+
+            </header>
+        <nav> 
+            <ul>
+                <li><a href="../landpage.html">Início</a></li>
+             </ul>
+        </nav>
+        <h2>Cadastro de Veiculo </h2>
+        <div class="container">
+            <form action="destino.html" method="post" class="formulario">
+                <input type="text" name="marca" id="marca" placeholder="MARCA API FIPE" required><br>
+                <input type="text" name="modelo" id="modelo" placeholder="MODELO API FIPE" required><br>
+                <input type="text" name="ano" id="ano" placeholder="ANO API FIPE" required><br>
+                <input type="text" name="km" id="km" placeholder="KM Atual" required><br>
+                <textarea rows="10" cols="40" maxlength="3000" id="descricao" placeholder="Descrição"></textarea><br>
+                <input type="text" name="valor_entrada" id="valor_entrada" placeholder="Valor de Compra"><br>
+                <input type="text" name="valor_venda" id="valor_venda" placeholder="Valor de Venda" required>
+
+                <div class="selecoes">
+                    <h4>Câmbio</h4>
+                    <label for="cambio">Selecione o Tipo de Câmbio</label><br>
+                    <select name="Câmbio" id="cambio"required>
+                        <option value="" selected>---Escolha---</option>
+                        <option value="automatico">Automático</option>
+                        <option value="automatizado_dupla">Automatizado</option>
+                        <option value="automatizado">Automatizado de Dupla Embreagem</option>
+                        <option value="manual">Manual</option>
+
+                    </select>
+
+                    <h4>Combustivel</h4>
+                    <label for="combustivel">Selecione o Combustível</label><br>
+                    <select name="combustivel" id="combustivel" required>
+                        <option value="" selected>---Escolha---</option>
+                        <option value="Flex">Flex</option>
+                        <option value="gasolina">Gasolina</option>
+                        <option value="Etanol">Etanol</option>
+                        <option value="Diesel">Diesel</option>
+                            
+                    </select>
+
+                    <h4>Tração</h4>
+                    <label for="tracao">Selecione o Tipo de Tração</label><br>
+                    <select name="tracao" id="tracao" required>
+                        <option value="" selected>---Escolha---</option>
+                        <option value="dianteira">Dianteira</option>
+                        <option value="trazeira">Trazeira</option>
+                        <option value="awd">AWD</option>
+                        <option value="4x4">4x4</option>
+                            
+                    </select>
+
+                    <h4>Carroceria</h4>
+                    <label for="carroceria">Selecione o Tipo de Carroceria</label><br>
+                    <select name="carroceria" id="carroceria" required>
+                        <option value="" selected>---Escolha---</option>                        
+                        <option value="buggy">Buggy</option>
+                        <option value="conversivel">Conversível</option>
+                        <option value="Cupe">Cupê</option>
+                        <option value="hatch">Hatch</option>
+                        <option value="minivan">Minivan</option>
+                        <option value="perua">Perua/SW</option>
+                        <option value="pickup">Pick-Up</option>
+                        <option value="seda">Sedã</option>
+                        <option value="suv">SUV</option>
+                        <option value="van">Van/Utilitário</option>
+                            
+                    </select>
+             </div>
+            
+                <h3>Selecione os Acessórios</h3>
+                <div class="checkbox">    
+                    <h4>Conforto e Conveniência</h4>
+
+                    <input type="checkbox" name="vidro_eletrico" id="vidro_eletrico">
+                    <label for="vidro_eletrico">Vidro Elétrico</label>
+
+                    <input type="checkbox" name="trava_eletricas" id="trava_eletrica">
+                    <label for="trava_eletrica">Trava Elétrica</label>
+
+                    <input type="checkbox" name="ar_condiconado" id="ar_condiconado">
+                    <label for="vidro_eletrico">Ar Condiconado</label>
+
+                    <input type="checkbox" name="couro" id="couro">
+                    <label for="couro">Bancos em Couro</label>
+
+                    <input type="checkbox" name="banco_eletrico" id="banco_eletrico">
+                    <label for="banco_eletrico">Banco com Regulagem Elétrica</label>
+
+                    <input type="checkbox" name="teto" id="teto">
+                    <label for="teto">Teto Solar</label>
+
+                    <input type="checkbox" name="piloto_automatico" id="piloto_automatico">
+                    <label for="piloto_automatico">Piloto Automomático</label>
+
+                    <input type="checkbox" name="piloto_automatico_adaptativo" id="piloto_automatico_adaptativo">
+                    <label for="piloto_automatico_adaptativo">Piloto Automático Adaptativo</label>
+
+                    <input type="checkbox" name="camera_re" id="camera_re">
+                    <label for="camera_re">Câmera de Ré</label>
+
+                    <input type="checkbox" name="sensor_estacionamento" id="sensor_estacionamento">
+                    <label for="sensor_estacionamento">Sensor de Estacionamento</label>
+
+                    <input type="checkbox" name="multimidia" id="multimidia">
+                    <label for="multimidia">Central Multimídia</label>
+                </div>
+            <div class="checkbox">
+                <h4>Segurança</h4>
+
+                <input type="checkbox" name="airbag_duplo" id="airbag_duplo">
+                <label for="airbag_duplo">Airbag Duplo Frontal</label>
+
+                <input type="checkbox" name="airbag_cortina" id="airbag_cortina">
+                <label for="airbag_cortina">Airbag de Cortina</label>
+
+                <input type="checkbox" name="airbag_lateral" id="airbag_lateral">
+                <label for="airbag_lateral">Airbag Lateral</label>
+
+                <input type="checkbox" name="abs" id="abs">
+                <label for="abs">ABS</label>
+
+                <input type="checkbox" name="controle_tracao" id="controle_tracao">
+                <label for="controle_tracao">Controle de Tração</label>
+
+                <input type="checkbox" name="controle_estabilidade" id="controle_estabilidade">
+                <label for="controle_estabilidade">Controle de Estabilidade</label>
+
+                <input type="checkbox" name="freio_emergencia" id="freio_emergencia">
+                <label for="freio_emergencia">Frenagem de Emergência</label>
+
+                <input type="checkbox" name="permanencia_faixa" id="permanencia_faixa">
+                <label for="permanencia_faixa">Contre de Permanência em Faixa</label>
+
+                <input type="checkbox" name="ponto_cego" id="ponto_cego">
+                <label for="ponto_cego">Alerta de Ponto Cego</label>
+            </div>
+
+            <div class="estoque">
+                <h4>Estoque</h4>
+                
+                <label for="tipo_entrada">Estoque Loja ou Consiguinado</label><br>
+                <select name="tipo_entrada" id="tipo_entrada" required>
+                    <option value="" selected>---Escolha---</option>
+                    <option value="estoque_loja">Estoque Loja</option>
+                    <option value="consiguinado">Consiguinado</option>
+                </select>
+                        
+            </div>
+            <div class="captacao">
+                <h4>Captação</h4>
+                
+                <label for="captacao">Quem Captou o Veículo?</label><br>
+                <select name="tipo_entrada" id="tipo_entrada" required>
+                    <option value="" selected>---Escolha---</option>
+                </select>
+                                     
+            </div>
+
+            <div class="adicionais">
+                <h4>Adiconais</h4>
+                
+                <label for="troca">Aceita Troca?</label><br>
+                <select name="troca" id="troca" required>
+                    <option value="" selected>---Escolha---</option>
+                    <option value="sim" >Sim</option>
+                    <option value="nao" >Não</option>
+                </select>
+
+                <br>
+
+                <label for="ipva">IPVA Pago?</label><br>
+                <select name="ipva" id="ipva" required>
+                    <option value="" selected>---Escolha---</option>
+                    <option value="sim" >Sim</option>
+                    <option value="nao" >Não</option>
+                </select>
+
+                <br>
+
+                <label for="dono">Único Dono?</label><br>
+                <select name="dono" id="dono" required>
+                    <option value="" selected >---Escolha---</option>
+                    <option value="sim" >Sim</option>
+                    <option value="nao" >Não</option>
+                </select>
+
+                <br>
+
+                <label for="leilao" class="leilao">Passagem por Leilão?</label><br>
+                <select name="leilao" id="leilao" required>
+                    <option value="" selected >---Escolha---</option>
+                    <option value="sim" >Sim</option>
+                    <option value="nao" >Não</option>
+                </select>
+                <br>
+                <input type="text" name="foto" id="foto_carro" placeholder="Foto Carro" required><br>
+                <input type="text" name="video" id="video_carro" placeholder="Video Carro" required><br>
+                                     
+            </div>
+            <input type="submit" value="Enviar" name="enviar" id="enviar">
+
+        </form>
+        
+        </div>
+   
+        </main>
+    </body>
+</html>
